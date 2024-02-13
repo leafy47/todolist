@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <img src="./Designer.png" alt="Logo">
+        <ul id="sidebarul">
+          <li id="primer" contenteditable="true">Project Alpha</li>
+          <li id="newproj">+ New Project</li>
+        </ul>
+      </nav>
+    
+      <div id="content">
+        <nav id="topbar">
+          <h1></h1>
+        </nav>
+        <div class="container">
+          <div class="task">
+            <p class="title">Kill a Dragon</p>
+            <p class="description">To slay the mightiest dragon in all the land and save the kingdom.</p>
+            <div class="priority">
+              <label for="list">Priority</label>
+              <select name="list" id="score">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+
+            </div>
+            <div class="duedate">
+              Date: <input type="date" value="2025-06-06" />
+            </div> 
+          </div>
+          <h3>+ New task</h3>
+        </div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>

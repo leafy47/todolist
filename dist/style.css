@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 110px;
+    color: aliceblue;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100%; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #444242; 
+}
+     
+#sidebar ul {
+    list-style: none;  
+    color: rgb(243, 242, 242);
+    font-size: 23px;
+    margin-top: 22px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+  
+#content {
+    margin-left: 200px;
+    padding: 0px;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+#topbar {
+    height: 200px;
+    width: auto;
+    background-color: #cfc7c7;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 0.4fr 5fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+    "title title title title"
+    ". description priority duedate";
+}
+
+.title {
+    grid-area: title;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.description {
+    grid-area: description;
+    font-size: 23px;
+}
+
+.priority {
+    grid-area: priority;
+    font-size: 27px;
+}
+
+.duedate {
+    grid-area: duedate;
+    font-size: 27px;
+}
+
+.container {
+    padding: 38px;
+}
+
+
