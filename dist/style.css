@@ -17,11 +17,12 @@ h1 {
 }
      
 #sidebar ul {
-    list-style: none;  
+    list-style: square;
     color: rgb(243, 242, 242);
     font-size: 23px;
     margin-top: 22px;
 }
+
 
 li {
     margin-bottom: 20px;
@@ -47,7 +48,7 @@ img {
 
 .task {
   display: grid;
-  grid-template-columns: 0.4fr 5fr 1fr 1fr;
+  grid-template-columns: 0.4fr 5fr 1fr 1.3fr;
   grid-template-rows: 1fr 2fr;
   grid-row-gap: 10px;
   grid-template-areas: 
@@ -80,4 +81,18 @@ img {
     padding: 38px;
 }
 
+#newtask {
+    margin-left: 38px;
+    font-size: 40px;
+    width: 200px;
+}
 
+.trashcan {
+    height: 25px;
+    width: auto;
+}
+
+.ttrash {
+    height: 19px;
+    width: auto;
+}
